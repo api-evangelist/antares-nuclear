@@ -1,23 +1,64 @@
 aid: antares-nuclear
+
 name: Antares Nuclear
-description: 'Antares Nuclear is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/assets/FGog662ATrkuDu572NcG6USO5w.png
+
+description: 'Antares Nuclear is a company developing factory‑produced, deployable fission microreactors for strategic energy applications. The firm aims to provide compact, safe, and scalable nuclear power solutions for remote locations, military bases, and emerging markets, leveraging advanced modular reactor technology to deliver reliable clean energy with minimal infrastructure.'
+
 url: https://raw.githubusercontent.com/api-evangelist/antares-nuclear/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Nuclear
+- Energy
+- Microreactor
+- Defense
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/antares-nuclear-hosts.yml
+- type: Newsroom
+  url: https://antaresindustries.com/press
+- type: DomainSecurity
+  url: security/antares-nuclear-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/antares-nuclear_stock/
+  url: https://antaresindustries.com/
+- type: TermsOfService
+  url: https://antaresindustries.com/terms-and-conditions
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer program or API documentation discovered.
+  evidence:
+    - url: https://api.antaresindustries.com
+      status: NXDOMAIN
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
